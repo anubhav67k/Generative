@@ -1,11 +1,18 @@
-.header {
-  height: 100%;
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+}
+
+.headerContainer{
+  height: 10%;
   display: flex;
   align-items: center;
-  background-color: transparent;
-  position: sticky;
-  padding: 12px 120px
+  background-color: white;
+  padding: 12px 120px;
 }
+
 
 .logo {
   width: 150px;
@@ -59,7 +66,9 @@
 .dropdownContent {
   display: none;
   position: absolute;
-  top: 45px;
+  background: white;
+  top: 47px;
+  left: 875px;
   padding: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 6px;

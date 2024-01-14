@@ -1,0 +1,138 @@
+.home {
+    height: calc(100vh - 114.5px);
+    max-height: 800px;
+    min-height: 700px;
+}
+
+.heroSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12%;
+    margin-top: 8%;
+}
+
+.left-heroSection {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+    max-width: 570px;
+}
+
+.heading {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.heading>span {
+    background: linear-gradient(243.87deg, #3C66CE, #173793, #3C66CE, #639BD5, #36C0CF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left-heroSection-Container>p {
+    color: #7c83a2;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    max-width: 438px;
+}
+
+.right-heroSection {
+    height: 486px;
+    width: 498px
+}
+
+.brandCard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 110px;
+}
+
+.brandCard-Container {
+    background: linear-gradient(to top, #000, #2d3038);
+    border-radius: 32px;
+    width: 1300px;
+}
+
+.brandCard-Container-Wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 102px;
+    margin-top: 102px;
+}
+
+.left-brandCard {
+    margin-right: 65px;
+    max-width: 570px;
+    display: flex;
+    align-items: center;
+}
+
+.heading-brandCard {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.heading-brandCard>span {
+    color: #fff;
+    font-size: 54px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.left-brandCard-Container>p {
+    color: #b0b7cb;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    max-width: 570px;
+}
+
+.right-brandCard {
+    width: 517px;
+}
+
+.advertSection {
+    background-color: #f3f4f7;
+}
+
+.advertSection-Container {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading-advertSection {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 24px auto;
+    text-align: center;
+}
+
+.heading-advertSection>span {
+    background: linear-gradient(243.87deg, #3C66CE, #173793, #3C66CE, #639BD5, #36C0CF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.advertSection-Container>p {
+    color: #b0b7cb;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 24px 0;
+    text-align: center;
+}

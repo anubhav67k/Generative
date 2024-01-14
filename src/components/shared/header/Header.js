@@ -30,71 +30,73 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <div className="leftHeader">
-          <Link to="/">
-            <img src={Logo} alt="" className="logo" />
-          </Link>
-        </div>
-        <div className="rightHeader">
-          <div className="products">
-            <button
-              className="productsButton"
-              onMouseLeave={changeIconDown}
-              onMouseEnter={changeIconUp}
-            >
-              Products
-              {!isDropdownOpen ? (
-                <GoChevronDown className="h-8" />
-              ) : (
-                <GoChevronUp className="h-8" />
-              )}
-            </button>
-            <div
-              className="dropdownContent"
-              style={{ display: isActive ? "none" : "" }}
-              onMouseLeave={changeIconDown}
-              onMouseEnter={changeIconUp}
-            >
-              <Link to="/aiphotoshoot" onClick={handleOptionClick}>
-                <div className="ai-photoshoot-option">
-                  <img
-                    src={AiPhotoshootImage}
-                    alt="AiPhotoshoot"
-                    className="w-15 h-12"
-                  />
-                  <span>Ai Photoshoot</span>
-                </div>
-              </Link>
-              <Link to="/imageediting" onClick={handleOptionClick}>
-                <div className="image-editing-option">
-                  <img
-                    src={ImageEditing}
-                    alt="ImageEditing"
-                    className="w-15 h-12"
-                  />
-                  <span>Image Editing</span>
-                </div>
-              </Link>
-              <Link to="/resizeimage" onClick={handleOptionClick}>
-                <div className="resize-image-option">
-                  <img
-                    src={ResizeImage}
-                    alt="ResizeImage"
-                    className="w-15 h-12"
-                  />
-                  <span>Resize Image</span>
-                </div>
-              </Link>
-            </div>
+        <div className="headerContainer">
+          <div className="leftHeader">
+            <Link to="/">
+              <img src={Logo} alt="" className="logo" />
+            </Link>
           </div>
-          <Link to="/login">
-            <div className="login">Login</div>
-          </Link>
-          <Link to="/login">
-            <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded try-it-for-free-btn">
-              Try it for free
-            </button>
-          </Link>
+          <div className="rightHeader">
+            <div className="products">
+              <button
+                className="productsButton"
+                onMouseLeave={changeIconDown}
+                onMouseEnter={changeIconUp}
+              >
+                Products
+                {!isDropdownOpen ? (
+                  <GoChevronDown className="h-8" />
+                ) : (
+                  <GoChevronUp className="h-8" />
+                )}
+              </button>
+              <div
+                className="dropdownContent"
+                style={{ display: isActive ? "none" : "" }}
+                onMouseLeave={changeIconDown}
+                onMouseEnter={changeIconUp}
+              >
+                <Link to="/aiphotoshoot" onClick={handleOptionClick}>
+                  <div className="ai-photoshoot-option">
+                    <img
+                      src={AiPhotoshootImage}
+                      alt="AiPhotoshoot"
+                      className="w-15 h-12"
+                    />
+                    <span>Ai Photoshoot</span>
+                  </div>
+                </Link>
+                <Link to="/imageediting" onClick={handleOptionClick}>
+                  <div className="image-editing-option">
+                    <img
+                      src={ImageEditing}
+                      alt="ImageEditing"
+                      className="w-15 h-12"
+                    />
+                    <span>Image Editing</span>
+                  </div>
+                </Link>
+                <Link to="/resizeimage" onClick={handleOptionClick}>
+                  <div className="resize-image-option">
+                    <img
+                      src={ResizeImage}
+                      alt="ResizeImage"
+                      className="w-15 h-12"
+                    />
+                    <span>Resize Image</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <Link to="/login">
+              <div className="login">Login</div>
+            </Link>
+            <Link to="/login">
+              <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded try-it-for-free-btn">
+                Try it for free
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
