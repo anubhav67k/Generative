@@ -1,0 +1,50 @@
+.descriptionBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(#00c8ff,hsl(207, 100%, 50%),#90ade4cb);
+    height: 360px;
+
+
+}
+.try-it-for-free-btn {
+    margin: 12px 2oopx;
+    cursor: pointer;
+    
+}
+.description{
+    
+
+}
+.highlightedText{
+    margin: 12px 40px;
+    font-size: 34px;
+    padding-left: 20px;
+    background: linear-gradient(white,hsl(260, 81%, 23%),#ff00d9,red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+p{
+    margin: 12px;
+    padding-left: 20px;
+    color: white;
+    font-size: 15px;;
+
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+ 
+
+
