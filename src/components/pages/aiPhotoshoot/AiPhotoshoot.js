@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../../shared/header/Header'
+
 
 function AiPhotoshoot() {
   return (
-    <div>AiPhotoshoot</div>
+    <div>
+      <Header />
+      AiPhotoshoot
+      </div>
   )
 }
 

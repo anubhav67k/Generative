@@ -1,8 +1,11 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Header from "../../shared/header/Header";
 const Home = () => {
   return (
+    <>
+    <Header />
     <div className="home">
       <div className="heroSection">
         <div className="left-heroSection">
@@ -83,6 +86,7 @@ const Home = () => {
       </div>
       <div className="contactUs"></div>
     </div>
+    </>
   );
 };
 
