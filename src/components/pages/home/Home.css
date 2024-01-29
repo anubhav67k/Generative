@@ -138,3 +138,28 @@
     margin: 24px 0 80px;
     text-align: center;
 }
+
+.contactUs{
+    background: url("https://wallpaperaccess.com/full/846241.jpg");
+    background-position: 50%;
+    background-size: cover;
+    height: 424px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contactUs>p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 0 auto 24px;
+}
+
+.contactBTN:hover{
+    background-color: white ;
+    color: #173793;
+}
