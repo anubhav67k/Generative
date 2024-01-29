@@ -25,19 +25,19 @@ const Footer = () => {
               />
             </Link>
             <Link to="https://twitter.com/cognizant" className="link">
-              <img src={Twitter} width="26px" height="26px" />
+              <img src={Twitter} alt="Twitter logo" width="26px" height="26px" />
             </Link>
             <Link to="https://www.facebook.com/Cognizant" className="link">
-              <img src={Facebook} width="25px" height="25px" />
+              <img src={Facebook} alt="Facebook logo" width="25px" height="25px" />
             </Link>
             <Link
               to="https://www.instagram.com/cognizant/?hl=en"
               className="link"
             >
-              <img src={Instagram} width="25px" height="25px" color="blue" />
+              <img src={Instagram} alt="Instagram logo" width="25px" height="25px" color="blue" />
             </Link>
             <Link to="https://www.youtube.com/cognizant" className="link">
-              <img src={Youtube} width="25px" height="25px" />
+              <img src={Youtube} alt="Youtube logo"  width="25px" height="25px" />
             </Link>
           </div>
           <div className="right-footer-navbar">
