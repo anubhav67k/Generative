@@ -1,0 +1,43 @@
+.features{
+    height:1050px;
+    margin-top: 150px;
+
+}
+.feature{
+    background-color: rgb(244, 249, 249);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: -100px auto 106px;
+}
+.featureReverse{
+    background-color: rgb(244,249,249);
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: -120px auto 50px;
+
+}
+.featureTag{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.featureSubTag{
+    font-size: 1.2rem;
+    font-weight: 200;
+   color: black; 
+}
+.thumbnail{
+    height: 350px;
+    width: 1000px;
+    padding: 40px 10px;
+}
+.featureLeft{
+    padding: 0px 40px;
+}
