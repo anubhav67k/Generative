@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import Footer from "../../shared/footer/Footer";
 
+import Header from "../../shared/header/Header";
 const Home = () => {
   return (
+    <>
+    <Header />
     <div className="home">
       <div className="heroSection">
         <div className="left-heroSection">
@@ -134,6 +137,7 @@ const Home = () => {
       </div>
       <Footer />
     </div>
+    </>
   );
 };
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../../shared/header/Header'
 
 function imageEditing() {
   return (
-    <div>imageEditing</div>
+    <div>
+      <Header />
+      imageEditing</div>
   )
 }
 
