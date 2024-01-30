@@ -25,7 +25,7 @@ const Login = () => {
         
           <form className="formDesign">
             <h1>Create Account</h1>
-            <span>or use your email for registration</span>
+            <p>or use your email for registration</p>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
@@ -36,12 +36,14 @@ const Login = () => {
         <img src={logo} alt=""></img>
           <form className="formDesign">
             <h1>Sign in</h1>
-            <span> use your account</span>
+            <p> use your account</p>
             <input type="email" placeholder="Email" required/>
             <input type="password" placeholder="Password"   required/>
             <button>Sign In</button>
             <span>Or</span>
-            <button className="googlebtn">Continue With Google</button>
+           <button >Continue With Google</button>
+
+           
           </form>
         </div>
         <div className="overlay-container">
@@ -60,7 +62,7 @@ const Login = () => {
             <div className="overlay-panel overlay-right">
               <h1>Welcome Back!</h1>
               <p>To keep connected with us please login with your personal info</p>
-              <button className="overlaybtn" onClick={signInButton}>
+              <button className="overlaybtn1" onClick={signInButton}>
                 
               
                 Sign In
