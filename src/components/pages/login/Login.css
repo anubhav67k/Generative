@@ -1,29 +1,24 @@
-
-.formDesign>h1{
+.formDesign>h1 {
   font-weight: bold;
   margin: 0;
   font-size: 20px;
-  
-  
-  
 }
+
 .formDesign>p {
   font-size: 14px;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
- margin-bottom: 30px;
- font-size:15px ;
-
+  margin-bottom: 30px;
+  font-size: 15px;
 }
-.formDesign>span{
+
+.formDesign>span {
   font-size: 15px;
   margin-top: 2px;
- 
 }
 
 .formDesign button {
-  
   background-color: #3C66CE;
   color: #fff;
   padding: 6px 20px;
@@ -34,53 +29,54 @@
   transition: background-color 0.3s ease-in-out;
   margin-top: 3px;
 }
- .formDesign button:hover{
+
+.formDesign button:hover {
   background-color: #2980b9;
   color: #fff;
 }
-button:focus{
+
+button:focus {
   outline: none;
 }
- .overlaybtn{
- 
+
+.overlaybtn {
   border-color: #121010;
   padding: 10px 10px 10px 10px;
   border-radius: 3px;
   width: 100px;
-  background-color:#3C66CE;
+  background-color: #3C66CE;
   margin-top: 25px;
-  
 }
-.overlaybtn1{
+
+.overlaybtn1 {
   border-color: #121010;
   padding: 10px 10px 10px 10px;
   border-radius: 3px;
   width: 100px;
-  background-color:#2980b9;
+  background-color: #2980b9;
   margin-top: 25px;
 }
-.formDesign{
+
+.formDesign {
   background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 50px;
-    height: 100%;
-    text-align: center;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
 }
-.formDesign>input{
+
+.formDesign>input {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
-  width:100%;
+  width: 100%;
   margin-bottom: 15px;
- 
- 
-
 }
-.container{
+
+.container {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -92,56 +88,63 @@ button:focus{
   margin-left: 250px;
   margin-top: 50px;
 }
-.form-container{
+
+.form-container {
   position: absolute;
   top: 0;
- height: 100%;
+  height: 100%;
   transition: all 0.6s ease-in-out;
-  
-  
 }
-.form-container>img{
+
+.form-container>img {
   width: 125px;
   margin-top: 15px;
   margin-left: 5px;
 }
-.sign-in-container{
-  left:0;
+
+.sign-in-container {
+  left: 0;
   width: 50%;
-  z-index:2;
+  z-index: 2;
   grid-column: 1 / span 1;
   grid-row: 1;
-
 }
-.sign-up-container{
-  left:0;
+
+.sign-up-container {
+  left: 0;
   width: 50%;
   opacity: 0;
-  z-index:1;
+  z-index: 1;
   grid-column: 2 / span 1;
   grid-row: 1;
-
 }
-.container.right-panel-active .sign-in-container{
+
+.container.right-panel-active .sign-in-container {
   transform: translateX(100%);
 }
-.container.right-panel-active .sign-up-container{
+
+.container.right-panel-active .sign-up-container {
   transform: translateX(100%);
   opacity: 1;
-  z-index:5;
+  z-index: 5;
   animation: show 1.5;
 }
+
 @keyframes show {
-  0%, 49.99% {
-      opacity: 0;
-      z-index: 1;
+
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
   }
-  
-  50%, 100% {
-      opacity: 1;
-      z-index: 5;
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
   }
 }
+
 .overlay-container {
   position: absolute;
   top: 0;
@@ -152,15 +155,17 @@ button:focus{
   transition: transform 0.6s ease-in-out;
   z-index: 100;
 }
-.overlay-panel>h1{
+
+.overlay-panel>h1 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.container.right-panel-active .overlay-container{
+
+.container.right-panel-active .overlay-container {
   transform: translateX(-100%);
 }
+
 .overlay {
-  /* background: #FF416C; */
   background: -webkit-linear-gradient(to right, #eea79a, #ec92a7);
   background: linear-gradient(to left, #3C66CE, #639BD5, #36C0CF);
   background-repeat: no-repeat;
@@ -176,10 +181,11 @@ button:focus{
   grid-row: 1;
   grid-column: 1;
 }
-.container.right-panel-active .overlay{
-  transform: translateX(50%);
 
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
 }
+
 .overlay-panel {
   position: absolute;
   display: flex;
@@ -194,21 +200,19 @@ button:focus{
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
 }
-.overlay-left{
+
+.overlay-left {
   transform: translateX(100%);
 }
-.container.right-panel-active .overlay-left{
+
+.container.right-panel-active .overlay-left {
   transform: translateX(100%);
 }
-.overlay-right{
+
+.overlay-right {
   transform: translateX(0);
 }
-.container.right-panel-active .overlay-right{
+
+.container.right-panel-active .overlay-right {
   transform: translateX(0);
 }
-
-
-
-
-
-  

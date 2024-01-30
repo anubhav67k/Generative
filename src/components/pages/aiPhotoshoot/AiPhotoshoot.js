@@ -1,14 +1,11 @@
-import React from 'react'
-import Header from '../../shared/header/Header'
-
-
+import React from "react";
+import Header from "../../shared/header/Header";
 function AiPhotoshoot() {
   return (
     <div>
       <Header />
       AiPhotoshoot
-      </div>
-  )
+    </div>
+  );
 }
-
-export default AiPhotoshoot
+export default AiPhotoshoot;
