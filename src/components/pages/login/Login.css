@@ -1,36 +1,42 @@
 
-.formDesign h1{
+.formDesign>h1{
   font-weight: bold;
   margin: 0;
   font-size: 20px;
   
+  
+  
 }
-p {
+.formDesign>p {
   font-size: 14px;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
-  margin: 20px 0 30px;
+ margin-bottom: 30px;
+ font-size:15px ;
+
 }
 .formDesign>span{
-  font-size: 12px;
+  font-size: 15px;
+  margin-top: 2px;
+ 
 }
 
 .formDesign button {
-  border-radius: 5px;
-  border: 1px solid #d9d5d4;
-  background-color: #151010;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 12px 45px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: transform 80ms ease-in;
-  margin-top: 10px;
+  
+  background-color: #3C66CE;
+  color: #fff;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 3px;
 }
- .formDesign button:active{
-  transform: scale(0.95);
+ .formDesign button:hover{
+  background-color: #2980b9;
+  color: #fff;
 }
 button:focus{
   outline: none;
@@ -39,14 +45,19 @@ button:focus{
  
   border-color: #121010;
   padding: 10px 10px 10px 10px;
-  border-radius: 20px;
+  border-radius: 3px;
   width: 100px;
-  background-color: rgb(207, 101, 101);
+  background-color:#3C66CE;
+  margin-top: 25px;
   
-  
-
- 
-  
+}
+.overlaybtn1{
+  border-color: #121010;
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+  width: 100px;
+  background-color:#2980b9;
+  margin-top: 25px;
 }
 .formDesign{
   background-color: #FFFFFF;
@@ -57,13 +68,17 @@ button:focus{
     padding: 0 50px;
     height: 100%;
     text-align: center;
+  
 }
-.formDesign input{
+.formDesign>input{
   background-color: #eee;
   border: none;
   padding: 12px 15px;
-  margin:8px 0;
   width:100%;
+  margin-bottom: 15px;
+ 
+ 
+
 }
 .container{
   background-color: white;
@@ -85,8 +100,8 @@ button:focus{
   
   
 }
-.form-container img{
-  width: 150px;
+.form-container>img{
+  width: 125px;
   margin-top: 15px;
   margin-left: 5px;
 }
@@ -114,7 +129,7 @@ button:focus{
   transform: translateX(100%);
   opacity: 1;
   z-index:5;
-  animation: show 0.6;
+  animation: show 1.5;
 }
 @keyframes show {
   0%, 49.99% {
@@ -137,16 +152,17 @@ button:focus{
   transition: transform 0.6s ease-in-out;
   z-index: 100;
 }
-.overlay-panel h1{
+.overlay-panel>h1{
   font-size: 20px;
+  margin-bottom: 10px;
 }
 .container.right-panel-active .overlay-container{
   transform: translateX(-100%);
 }
 .overlay {
-  background: #FF416C;
+  /* background: #FF416C; */
   background: -webkit-linear-gradient(to right, #eea79a, #ec92a7);
-  background: linear-gradient(to right, #fa9b8a, #e97691);
+  background: linear-gradient(to left, #3C66CE, #639BD5, #36C0CF);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -189,10 +205,6 @@ button:focus{
 }
 .container.right-panel-active .overlay-right{
   transform: translateX(0);
-}
-.googlebtn{
-  background-color: rgb(58, 56, 56);
-  
 }
 
 
