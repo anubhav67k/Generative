@@ -13,6 +13,7 @@ const Login = () => {
     alert("success");
   };
   return (
+    <div className="signin">
     <div
       className={`container ${isRightPanelActive ? "right-panel-active" : ""}`}
     >
@@ -59,6 +60,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 export default Login;

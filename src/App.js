@@ -6,6 +6,7 @@ import AiPhotoshoot from "./components/pages/aiPhotoshoot/AiPhotoshoot";
 import ResizeImage from "./components/pages/resizeImage/ResizeImage";
 import ImageEditing from "./components/pages/imageEditing/imageEditing";
 import Login from "./components/pages/login/Login";
+import DashBoard from "./components/pages/dashboard/DashBoard";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="resizeimage/" element={<ResizeImage />} />
           <Route path="imageediting/" element={<ImageEditing />} />
           <Route path="login/" element={<Login />} />
+          <Route path="dashboard/" element={<DashBoard />} />
         </Routes>
       </div>
     </BrowserRouter>
