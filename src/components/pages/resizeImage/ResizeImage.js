@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../../shared/header/Header'
-
 function ResizeImage() {
   return (
     <div>
@@ -8,5 +7,4 @@ function ResizeImage() {
       ResizeImage</div>
   )
 }
-
 export default ResizeImage

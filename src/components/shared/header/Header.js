@@ -6,18 +6,14 @@ import ImageEditing from "../../../assets/image-editing.png";
 import ResizeImage from "../../../assets/resize-image.webp";
 import { GoChevronDown } from "react-icons/go";
 import { GoChevronUp } from "react-icons/go";
-
 import "./Header.css";
-
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
-
   const handleOptionClick = () => {
     // we have to make dropdownContent display property to none
     setIsActive(true);
   };
-
   const changeIconDown = () => {
     setIsDropdownOpen(false);
     setIsActive(false);
@@ -26,7 +22,6 @@ const Header = () => {
     setIsDropdownOpen(true);
     setIsActive(false);
   };
-
   return (
     <>
       <div className="header">
@@ -102,5 +97,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;

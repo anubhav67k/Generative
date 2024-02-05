@@ -6,7 +6,6 @@ import Twitter from "../../../assets/twitter.png";
 import Youtube from "../../../assets/youtube.png";
 import Facebook from "../../../assets/facebook.png";
 import Instagram from "../../../assets/instagram.png";
-
 const Footer = () => {
   return (
     <div className="footer">
@@ -83,7 +82,6 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-
             <div className="product">
               <h3 className="nav-footer-heading">Product</h3>
               <div className="footer-links">
@@ -99,5 +97,4 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;
