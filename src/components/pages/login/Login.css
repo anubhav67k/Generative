@@ -1,3 +1,12 @@
+.signin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
+}
+
 .formDesign>h1 {
   font-weight: bold;
   margin: 0;
@@ -78,15 +87,15 @@ button:focus {
 
 .container {
   background-color: white;
+  display: flex;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
+  justify-content: center;
   overflow: hidden;
-  width: 768px;
-  max-width: 100%;
+  max-width: 60%;
   min-height: 480px;
-  margin-left: 250px;
-  margin-top: 50px;
+ 
 }
 
 .form-container {
@@ -166,7 +175,6 @@ button:focus {
 }
 
 .overlay {
-  background: -webkit-linear-gradient(to right, #eea79a, #ec92a7);
   background: linear-gradient(to left, #3C66CE, #639BD5, #36C0CF);
   background-repeat: no-repeat;
   background-size: cover;
