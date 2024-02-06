@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import HeroSection from "./HeroSection/heroSection";
 import Features from "./Features/features";
 import "./imageEditing.css";
@@ -6,6 +7,10 @@ import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 
+=======
+import React from "react";
+import Header from "../../shared/header/Header";
+>>>>>>> main
 function imageEditing() {
   const [selectedSet, setSelectedSet] = useState(1);
   const handleSetChange = (setNumber, event) => {
@@ -72,6 +77,7 @@ function imageEditing() {
   };
 
   return (
+<<<<<<< HEAD
     <>
       {/* Hero Section start */}
 
@@ -264,4 +270,12 @@ function imageEditing() {
   );
 }
 
+=======
+    <div>
+      <Header />
+      imageEditing
+    </div>
+  );
+}
+>>>>>>> main
 export default imageEditing;

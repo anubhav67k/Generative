@@ -1,42 +1,40 @@
 .header {
-  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+}
+.headerContainer {
+  height: 10%;
   display: flex;
   align-items: center;
-  background-color: transparent;
-  position: sticky;
-  padding: 12px 120px
+  background-color: white;
+  padding: 12px 120px;
 }
-
 .logo {
   width: 150px;
 }
-
 .leftHeader {
   display: flex;
   flex-grow: 1;
 }
-
 .rightHeader {
   display: flex;
   align-items: center;
 }
-
 .products {
   margin: 0 13px;
   color: #71799b;
   font-weight: 500;
   font-size: 14px;
 }
-
 .productsButton {
   display: flex;
   align-items: center;
 }
-
 .products:hover {
-  color: #2b2c39;
+  color: #000048;
 }
-
 .login {
   margin: 0 13px;
   color: #71799b;
@@ -44,36 +42,32 @@
   font-weight: 500;
   font-size: 14px;
 }
-
 .login:hover {
-  color: #2b2c39;
+  color: #000048;
 }
-
 .try-it-for-free-btn {
   margin: 0 13px;
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
 }
-
 .dropdownContent {
   display: none;
   position: absolute;
-  top: 45px;
+  background: white;
+  top: 47px;
+  left: 875px;
   padding: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
-
 .products:hover .dropdownContent {
   display: inline-flex;
 }
-
 .dropdownContent>* {
   margin-right: 10px;
   align-items: center;
 }
-
 .ai-photoshoot-option,
 .image-editing-option,
 .resize-image-option {
@@ -87,24 +81,20 @@
   padding: 8px;
   border-radius: 4px;
 }
-
 .ai-photoshoot-option img,
 .image-editing-option img,
 .resize-image-option img {
   margin-bottom: 8px;
 }
-
 .ai-photoshoot-option:hover {
-  color: #2b2c39;
+  color: #000048;
   background-color: #f1f1f1
 }
-
 .image-editing-option:hover {
-  color: #2b2c39;
+  color: #000048;
   background-color: #f1f1f1;
 }
-
 .resize-image-option:hover {
-  color: #2b2c39;
+  color: #000048;
   background-color: #f1f1f1
 }
