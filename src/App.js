@@ -15,7 +15,6 @@ function App() {
           <Route path="resizeimage/" element={<ResizeImage />} />
           <Route path="imageediting/" element={<ImageEditing/>} />
           <Route path="login/" element={<Login/>} />
-          <Route path="imageGeneration/" element={<ImageGeneration/>} />
         </Routes>
       </div>
     </BrowserRouter>
