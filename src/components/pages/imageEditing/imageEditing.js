@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import HeroSection from "./HeroSection/heroSection";
 import Features from "./Features/features";
 import "./imageEditing.css";
@@ -6,11 +5,6 @@ import BeforeAfterImageSlider from "react-before-after-slider";
 import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
-
-=======
-import React from "react";
-import Header from "../../shared/header/Header";
->>>>>>> main
 function imageEditing() {
   const [selectedSet, setSelectedSet] = useState(1);
   const handleSetChange = (setNumber, event) => {
@@ -26,7 +20,6 @@ function imageEditing() {
           after:
             "https://static.lightxeditor.com/assets/images/product_cd.webp",
         };
-
       case 2:
         return {
           before:
@@ -34,7 +27,6 @@ function imageEditing() {
           after:
             "https://img.freepik.com/premium-photo/illustration-interior-living-room-box_252025-5883.jpg?size=626&ext=jpg&ga=GA1.1.30508127.1707162865&semt=ais",
         };
-
       case 3:
         return {
           before:
@@ -42,7 +34,6 @@ function imageEditing() {
           after:
             "https://img.freepik.com/free-vector/blue-sedan-car-isolated-white-vector_53876-67352.jpg?size=626&ext=jpg",
         };
-
       case 4:
         return {
           before:
@@ -50,7 +41,6 @@ function imageEditing() {
           after:
             "https://img.freepik.com/free-photo/bowl-baked-beans-garlic-pepper-trivet-blue_114579-37053.jpg?size=626&ext=jpg&ga=GA1.1.30508127.1707162865&semt=ais",
         };
-
       case 5:
         return {
           before:
@@ -58,7 +48,6 @@ function imageEditing() {
           after:
             "https://img.freepik.com/premium-photo/medicine-treatment-hiv-infection-pills-capsules-battle-table-different-colorful-tablets-colored-background-with-copy-space_1048944-23069929.jpg?size=626&ext=jpg&ga=GA1.1.30508127.1707162865&semt=ais",
         };
-
       case 6:
         return {
           before:
@@ -75,16 +64,11 @@ function imageEditing() {
         };
     }
   };
-
   return (
-<<<<<<< HEAD
     <>
       {/* Hero Section start */}
-
       <HeroSection />
-
       {/* Hero Section End */}
-
       <div className="corousal">
         <Marquee speed={100} pauseOnHover="true">
           <img
@@ -115,9 +99,7 @@ function imageEditing() {
         </Marquee>
       </div>
       <Features />
-
       {/* Demo Section  */}
-
       <section className="demoSection">
         <div className="demoContainer">
           <div className="demoHeading">
@@ -128,7 +110,11 @@ function imageEditing() {
               <p className="demoSubTitle">
                 {" "}
                 Our image rendering API utilizes the latest AI technologies and
-                encodes images to align every <br /><span className="subtitle"> single image to your specific quality</span>
+                encodes images to align every <br />
+                <span className="subtitle">
+                  {" "}
+                  single image to your specific quality
+                </span>
               </p>
             </div>
           </div>
@@ -187,10 +173,7 @@ function imageEditing() {
                 Furniture
               </a>
             </div>
-            
           </div>
-        
-          
           <div className="demoImgSection">
             <BeforeAfterImageSlider
               before={renderImageSet().before}
@@ -201,9 +184,7 @@ function imageEditing() {
           </div>
         </div>
       </section>
-
       {/* steps for editing the images section */}
-
       <section className="stepsSection">
         <div className="stepsContainer">
           <div className="steps">
@@ -255,7 +236,6 @@ function imageEditing() {
               />
             </div>
             <Link to="/login">
-            
               <div className="buttonContainer">
                 <a className="button" href="#">
                   Get Started
@@ -265,17 +245,7 @@ function imageEditing() {
           </div>
         </div>
       </section>
-      
     </>
   );
 }
-
-=======
-    <div>
-      <Header />
-      imageEditing
-    </div>
-  );
-}
->>>>>>> main
 export default imageEditing;

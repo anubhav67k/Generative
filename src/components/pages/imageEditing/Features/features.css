@@ -3,9 +3,9 @@
   height: 1250px;
   margin-top: 90px;
   border: none;
-  
   padding: 10px 0px;
 }
+
 .feature {
   height: 350px;
   gap: 200px;
@@ -21,12 +21,12 @@
   height: 350px;
   display: flex;
   flex-direction: row-reverse;
-
   justify-content: space-evenly;
   max-width: 70%;
   margin: -60px auto;
   padding: 42px 20px;
 }
+
 .featureTag {
   font-size: 2rem;
   font-weight: 700;
@@ -39,25 +39,30 @@
   color: rgb(72, 71, 71);
   margin: 10px 0px;
 }
+
 .thumbnail {
   height: 100%;
   width: 100%;
 }
+
 .featureLeft {
   padding: 30px;
   width: 650px;
   margin-right: -250px;
 }
+
 .featureRight {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .thumbnailContainer {
   border-radius: 2px;
   overflow: hidden;
   height: 50vh;
 }
+
 .thumbnailContainerLast {
   border-radius: 2px;
   overflow: hidden;

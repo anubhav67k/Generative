@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
 /* Marquee styling */
 .slidingImage {
   width: 400px;
@@ -9,19 +10,19 @@
   margin: 0px 20px;
   position: relative;
 }
+
 .corousal {
   margin-top: -40px;
   display: flex;
 }
 
 /* Demo section styling */
-
 .demoSection {
   padding: 20px;
   margin-top: 100px;
-  
 }
-.subtitle{
+
+.subtitle {
   margin-left: 200px;
 }
 
@@ -31,20 +32,24 @@
   justify-content: center;
   align-items: center;
 }
+
 .demoTitle {
   font-size: 35px;
   font-weight: 700;
   color: rgb(66, 54, 238);
 }
+
 .demoSubTitleContainer {
   margin: -4px 50px;
   padding: 8px;
 }
+
 .demoSubTitle {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 400;
 }
+
 .demoAction {
   display: flex;
   justify-content: center;
@@ -52,6 +57,7 @@
   margin: 30px;
   gap: 10px;
 }
+
 .demoAction .demoActionItems {
   font-weight: 650;
   display: inline-block;
@@ -62,19 +68,21 @@
   transition: background 0.5s, transform 0.5s;
   cursor: pointer;
 }
+
 .demoAction .demoActionItems:hover {
   background: #ff004f;
   border: none;
   border-radius: 8px;
   transform: translateY(-10px);
 }
+
 .demoAction .demoActionItems:active {
   background: rgb(49, 74, 236);
   border: none;
   border-radius: 8px;
 }
-/* Before and After image slider styling */
 
+/* Before and After image slider styling */
 .demoImgContainer {
   width: 800px;
   height: 900px;
@@ -94,6 +102,7 @@
   margin: 50px;
   padding: 20px;
 }
+
 .stepsContainer {
   display: flex;
   justify-content: center;
@@ -101,32 +110,31 @@
   gap: 60px;
   padding: 2px;
 }
-.steps {
-  background: linear-gradient(
-    to right top,
-    #dd60f9,
-    #812dee,
-    rgba(118, 95, 236, 0.863),
-    rgb(74, 107, 227),
-    #dd60f9,
-    blueviolet
-  );
 
+.steps {
+  background: linear-gradient(to right top,
+      #dd60f9,
+      #812dee,
+      rgba(118, 95, 236, 0.863),
+      rgb(74, 107, 227),
+      #dd60f9,
+      blueviolet);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-
   height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .steps img {
   width: 100%;
   transition: transform 0.5s;
   border-radius: 10px;
   display: block;
 }
+
 .layer {
   color: white;
   width: 100%;
@@ -146,44 +154,46 @@
   font-size: 14px;
   transition: height 0.5s;
 }
+
 .layer h3 {
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 20px;
 }
+
 .steps:hover img {
   transform: scale(0.8);
 }
+
 .steps:hover .layer {
   height: 100%;
 }
+
 .footerContainer {
   height: 360px;
   color: white;
   border-radius: 24px;
-
-  background: linear-gradient(
-    to right top,
-    #dd60f9,
-    #812dee,
-    rgba(118, 95, 236, 0.863),
-    rgb(74, 107, 227),
-    #dd60f9,
-    blueviolet
-  );
+  background: linear-gradient(to right top,
+      #dd60f9,
+      #812dee,
+      rgba(118, 95, 236, 0.863),
+      rgb(74, 107, 227),
+      #dd60f9,
+      blueviolet);
   margin: 50px 120px;
-
   padding: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 200px;
 }
+
 .footerLeft {
   display: flex;
   flex-direction: column;
   width: 1200px;
 }
+
 .footerLeft h1 {
   font-size: 24px;
   font-weight: 500;
@@ -193,11 +203,13 @@
   width: 70%;
   border-radius: 10px;
 }
+
 .buttonContainer {
   display: block;
   margin-left: -490px;
   margin-top: -80px;
 }
+
 .button {
   border: none;
   border-radius: 10px;
@@ -208,6 +220,7 @@
   color: blue;
   cursor: pointer;
 }
+
 .button:hover {
   opacity: 0.8;
 }

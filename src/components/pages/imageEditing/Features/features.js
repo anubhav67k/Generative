@@ -12,7 +12,6 @@ function features() {
             creativity with simplified image background removal.
           </p>
         </div>
-
         <div className="featureRight">
           <Tilt scale="1.2">
             <div className="thumbnailContainer">
@@ -32,7 +31,6 @@ function features() {
             You can give the desired color to your image with our AI tool.
           </p>
         </div>
-
         <div className="featureRight">
           <Tilt scale="1.2">
             <div className="thumbnailContainer">
@@ -53,7 +51,6 @@ function features() {
             visuals with stylish and easy text additions.
           </p>
         </div>
-
         <div className="featureRight">
           <Tilt scale="1.2">
             <div className="thumbnailContainer">
@@ -74,10 +71,9 @@ function features() {
             resolution to desired settings.
           </p>
         </div>
-
         <div className="featureRight">
           <Tilt scale="1.2">
-            <div className='thumbnailContainerLast'>
+            <div className="thumbnailContainerLast">
               <img
                 src="https://static.lightxeditor.com/assets/images/home/ResizePhoto.webp"
                 alt=""
@@ -90,5 +86,4 @@ function features() {
     </section>
   );
 }
-
 export default features;
