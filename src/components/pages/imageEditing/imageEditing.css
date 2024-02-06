@@ -1,286 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-
-.slidingImage{
-    width: 400px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 40px;
-    float: left;
-    margin: 0px 20px;
-    position:relative;
-    
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+/* Marquee styling */
+.slidingImage {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 40px;
+  float: left;
+  margin: 0px 20px;
+  position: relative;
 }
-.corousal{
-    margin: -40px 12px;
-    display: flex;
-}
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.demoMainContent{
-    position: relative;
-    height: 100%;
-    
-    
-
-    border-radius: 10px;
-    border:10px solid (red, 252, 252);
-    
-    
-    width: 100%;
+.corousal {
+  margin-top: -40px;
+  display: flex;
 }
 
-.demoImage{
-    width: 100%;
-    padding: 10px;
-    height: 100%;
-    position: absolute;
+/* Demo section styling */
 
-    
-} 
-#my-img{
-    clip-path: polygon(0 0 , 50% 0, 50% 100%, 0 100%);
-    height: 100%;
-
+.demoSection {
+  padding: 20px;
+  margin-top: 100px;
+  
 }
-#slider{
-    position: relative;
-    -webkit-appearance: none;
-    width: calc( 100% + 40px);
-    background-color: transparent;
-    height: 100%;
-    margin-left: -10px;
-    outline: none;
-}
-#slider::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    height: 40px;
-    width: 40px;
-    /* background-image: url("");*/
-} 
-
-.description{
-    
-
+.subtitle{
+  margin-left: 200px;
 }
 
-.demoModuleDashboard{
-    
-    height: 800px;
-    margin-top: 100px;
-    background: rgb(250, 248, 248);
-    
-    display: flex;
+.demoHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.demoTitle {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(66, 54, 238);
+}
+.demoSubTitleContainer {
+  margin: -4px 50px;
+  padding: 8px;
+}
+.demoSubTitle {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.demoAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 10px;
+}
+.demoAction .demoActionItems {
+  font-weight: 650;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  transition: background 0.5s, transform 0.5s;
+  cursor: pointer;
+}
+.demoAction .demoActionItems:hover {
+  background: #ff004f;
+  border: none;
+  border-radius: 8px;
+  transform: translateY(-10px);
+}
+.demoAction .demoActionItems:active {
+  background: rgb(49, 74, 236);
+  border: none;
+  border-radius: 8px;
+}
+/* Before and After image slider styling */
 
+.demoImgContainer {
+  width: 800px;
+  height: 900px;
+  position: relative;
+  margin: 20px;
 }
 
-.demoModuleControls{
-    height: 740px;
-    width: 600px;
-    padding-top: 40px;
-    padding-right: 10px;
-    padding-left: 56px;
-    padding-bottom: 80px;
-    
-
-
-}
-.controlActionItems{
-    
-    height: 402px;
-    margin-top: 30px;
-    
-}
-*{
-    box-sizing: border-box;
-    
-
+.demoImgSection {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.controlsModuleSectionTitle{
-    display: block;
-    line-height: 24px;
-    margin-bottom: 24px;
+/* steps to edit images styling */
+.stepsSection {
+  margin: 50px;
+  padding: 20px;
 }
-.controlModuleCategories{
-    
-    height: 398px;
-    width: 382px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+.stepsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 2px;
 }
-    
+.steps {
+  background: linear-gradient(
+    to right top,
+    #dd60f9,
+    #812dee,
+    rgba(118, 95, 236, 0.863),
+    rgb(74, 107, 227),
+    #dd60f9,
+    blueviolet
+  );
 
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps img {
+  width: 100%;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  display: block;
+}
+.layer {
+  color: white;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.steps:hover img {
+  transform: scale(0.8);
+}
+.steps:hover .layer {
+  height: 100%;
+}
+.footerContainer {
+  height: 360px;
+  color: white;
+  border-radius: 24px;
 
+  background: linear-gradient(
+    to right top,
+    #dd60f9,
+    #812dee,
+    rgba(118, 95, 236, 0.863),
+    rgb(74, 107, 227),
+    #dd60f9,
+    blueviolet
+  );
+  margin: 50px 120px;
 
-
-
-.controlModuleCategory{
-    height: 132px;
-    color: white;
-    padding: 20px 20px 40px 10px;
-     border: 1px solid transparent; 
-    border-radius: 10px;
-    background: white;
-    line-height: 15.6px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    line-height: 15.6px;
-    margin-bottom: 16px;
-    padding: 20px 14px 14px;
-    padding: 10px 10px 10px 10px;
-    position: relative;
-    transition: all .2s ease;
-    width: calc(50% - 8px);
-    cursor: pointer;    
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
 }
-
-.controlModuleCategory:hover{
-    border: 2px solid white;
-    /* background: linear-gradient(hsl(328, 100%, 50%),#008cff); */
-    background: rgb(61, 193, 246);
-    
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
 }
-.controlsModuleOptionlist{
-    height: 238px;
-    
-}
-.controlsModuleOption{
-    
-    height: 50px;
-    margin-bottom: 6px;
-
-}
-.c-toggler__label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0 -6px;
-    cursor: pointer;
-}
-.Controls-module--Switcher--cf7c2 {
-    -ms-flex-pack: justify;
-    -ms-flex-flow: row-reverse;
-    flex-flow: row-reverse;
-    justify-content: space-between;
-    width: 100%;
-}
-.c-toggler__label .c-toggler__input {
-    display: none;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.c-toggler__slider {
-    margin: 0 !important;
-    position: relative;
-    cursor: pointer;
-    width: 44px;
-    height: 24px;
-    background: #E1E5EB;
-    transition: 0.4s;
-    border-radius: 16px;
-}
-.c-toggler__slider:hover {
-    background-color: #BCC2D2;
-}
-.c-toggler__slider::before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #FFFFFF;
-    transition: 0.6s;
-    border-radius: 50%;
+.footerLeft h1 {
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.c-toggler__text {
-    margin: 0 6px;
-    font-size: 14px;
-    font-family: Inter, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    line-height: 16px;
-    color: #2B2C39;
+.footerImg img {
+  width: 70%;
+  border-radius: 10px;
 }
-.Controls-module--SwitcherLabel--5343a {
-    color: #2b2c39;
-    font-family: Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 28px;
-    text-decoration: none;
-    text-transform: none;
+.buttonContainer {
+  display: block;
+  margin-left: -490px;
+  margin-top: -80px;
 }
-/* .controlModuleLabel{
-    transition: filter .2s ease,-webkit-filter .2s ease;} */
-
-
-.controlModuleIcon{
-    -webkit-user-drag: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 30%;
-    height: 40%;
-    border-radius: 50%;
-    margin-top: 20px;
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  width: 140px;
+  padding: 10px 26px;
+  margin-top: 24px;
+  color: blue;
+  cursor: pointer;
 }
-.controlModuleLabel{
-    color: salmon;
-    font-family: Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 28px;
-    text-decoration: none;
-    text-transform: none;
-    transition: all .2s ease;
-    margin: 4px;
-    
+.button:hover {
+  opacity: 0.8;
 }
-.secRight{
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    background-color: black;
-    margin: auto;
-
-}
-.sectionTag{
-    width: 100%;
-    
-
-}
-.imgFluid{
-    width: 20%;
-}
-.thumbnail{
-    margin-right:10px;
-}
-
-
-
-
-
-
-
-
-
-    
-
-
-
- 
-
-
