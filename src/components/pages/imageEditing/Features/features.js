@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import "./features.css";
-function features() {
+import "./Features.css";
+const Features=()=> {
   return (
     <section className="features">
       <section className="feature">
@@ -86,4 +86,4 @@ function features() {
     </section>
   );
 }
-export default features;
+export default Features;

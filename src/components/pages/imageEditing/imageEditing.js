@@ -1,11 +1,11 @@
-import HeroSection from "./HeroSection/heroSection";
-import Features from "./Features/features";
-import "./imageEditing.css";
+import HeroSection from "./HeroSection/HeroSection";
+import Features from "./Features/Features";
+import "./ImageEditing.css";
 import BeforeAfterImageSlider from "react-before-after-slider";
 import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
-function imageEditing() {
+const ImageEditing = () => {
   const [selectedSet, setSelectedSet] = useState(1);
   const handleSetChange = (setNumber, event) => {
     event.preventDefault();
@@ -248,4 +248,4 @@ function imageEditing() {
     </>
   );
 }
-export default imageEditing;
+export default ImageEditing;
