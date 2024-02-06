@@ -82,39 +82,43 @@ const Home = () => {
             <div className="marqueeContainer">
               <Marquee>
                 <img
-                  src="https://claid.ai/static/3e68c0e0b346cb33e25ae464a8f4ca2b/35aa2/Fruits.webp"
+                  src="https://static.apkem.com/images/en/com.vyroai.photoenhancer/screen6.png"
                   alt="food"
                   style={{
                     margin: "0px 30px 75px",
                     width: "390px",
                     height: "600px",
+                    borderRadius: "20px",
                   }}
                 />
                 <img
-                  src="https://claid.ai/static/ccbba0087c4dde2b8d41fe49d9dc39b7/35aa2/Potrait.webp"
+                  src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/b07ac2ed-3726-4875-87af-88a0f8930733/1507127854/phototune-ai-photo-enhancer-screenshot.png"
                   alt="lady"
                   style={{
                     margin: "75px 30px 0px",
                     width: "390px",
                     height: "600px",
+                    borderRadius: "20px",
                   }}
                 />
                 <img
-                  src="https://claid.ai/static/e75114c66a4d7e8f8e34269918d540af/35aa2/Oil.webp"
+                  src="https://static.apkem.com/images/en/com.vyroai.photoenhancer/screen5.png"
                   alt="bottle"
                   style={{
                     margin: "0px 30px 75px",
                     width: "390px",
                     height: "600px",
+                    borderRadius: "20px",
                   }}
                 />
                 <img
-                  src="https://claid.ai/static/fea351d5354c1e41a2abd7b5c16e09a9/35aa2/Room.webp"
+                  src="https://static.apkem.com/images/en/com.vyroai.photoenhancer/screen1.png"
                   alt="bottle"
                   style={{
                     margin: "75px 30px 0px",
                     width: "390px",
                     height: "600px",
+                    borderRadius: "20px",
                   }}
                 />
               </Marquee>
