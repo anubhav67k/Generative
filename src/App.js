@@ -5,6 +5,7 @@ import AiPhotoshoot from "./components/pages/aiPhotoshoot/AiPhotoshoot";
 import ResizeImage from "./components/pages/resizeImage/ResizeImage";
 import ImageEditing from "./components/pages/imageEditing/ImageEditing";
 import Login from "./components/pages/login/Login";
+import ImageGeneration from "./components/pages/imageGeneration/ImageGeneration";
 function App() {
   return (
     <BrowserRouter>
