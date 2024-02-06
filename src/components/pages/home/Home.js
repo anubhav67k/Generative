@@ -54,7 +54,6 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-
             <div className="right-brandCard">
               <img
                 src="https://claid.ai/static/b5614aedd814cf816ebc0c39c17ee6e1/f991a/brand.webp"
@@ -85,5 +84,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;

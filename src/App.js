@@ -6,8 +6,7 @@ import AiPhotoshoot from "./components/pages/aiPhotoshoot/AiPhotoshoot";
 import ResizeImage from "./components/pages/resizeImage/ResizeImage";
 import ImageEditing from "./components/pages/imageEditing/imageEditing";
 import Login from "./components/pages/login/Login";
-
-
+import ImageGeneration from "./components/pages/imageGeneration/ImageGeneration";
 function App() {
   return (
     <BrowserRouter>
@@ -19,10 +18,10 @@ function App() {
           <Route path="resizeimage/" element={<ResizeImage />} /> 
           <Route path="imageediting/" element={<ImageEditing/>} /> 
           <Route path="login/" element={<Login/>} /> 
+          <Route path="Imagegeneration/" element={<ImageGeneration/>} /> 
         </Routes>
     </div>
       </BrowserRouter>
   );
 }
-
 export default App;
