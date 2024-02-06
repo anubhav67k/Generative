@@ -10,11 +10,12 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aiphotoshoot" element={<AiPhotoshoot />} />
-          <Route path="/resizeimage" element={<ResizeImage />} />
-          <Route path="/imageediting" element={<ImageEditing />} />
-          <Route path="/login" element={<Login />} />
+           <Route path="/" element={<Home />} />
+          <Route path="aiphotoshoot/" element={<AiPhotoshoot />} />
+          <Route path="resizeimage/" element={<ResizeImage />} />
+          <Route path="imageediting/" element={<ImageEditing/>} />
+          <Route path="login/" element={<Login/>} />
+          <Route path="imageGeneration/" element={<ImageGeneration/>} />
         </Routes>
       </div>
     </BrowserRouter>
