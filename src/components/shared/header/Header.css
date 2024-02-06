@@ -1,10 +1,10 @@
-.header{
+.header {
   position: fixed;
   width: 100%;
   z-index: 9999;
   top: 0;
 }
-.headerContainer{
+.headerContainer {
   height: 10%;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
   align-items: center;
 }
 .products:hover {
-  color: #2b2c39;
+  color: #000048;
 }
 .login {
   margin: 0 13px;
@@ -43,7 +43,7 @@
   font-size: 14px;
 }
 .login:hover {
-  color: #2b2c39;
+  color: #000048;
 }
 .try-it-for-free-btn {
   margin: 0 13px;
@@ -87,14 +87,14 @@
   margin-bottom: 8px;
 }
 .ai-photoshoot-option:hover {
-  color: #2b2c39;
+  color: #000048;
   background-color: #f1f1f1
 }
 .image-editing-option:hover {
-  color: #2b2c39;
+  color: #000048;
   background-color: #f1f1f1;
 }
 .resize-image-option:hover {
-  color: #2b2c39;
+  color: #000048;
   background-color: #f1f1f1
 }
