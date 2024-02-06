@@ -19,6 +19,7 @@ function App() {
           <Route path="imageediting/" element={<ImageEditing/>} /> 
           <Route path="login/" element={<Login/>} /> 
           <Route path="Imagegeneration/" element={<ImageGeneration/>} /> 
+          <Route path="imageGeneration/" element={<ImageGeneration/>} /> 
         </Routes>
     </div>
       </BrowserRouter>

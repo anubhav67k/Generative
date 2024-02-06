@@ -12,6 +12,9 @@ import upload from "../../../assets/shoe.png";
 import remove from "../../../assets/removebg shoes.png";
 import Marquee from 'react-fast-marquee';
 function AiPhotoshoot() {
+  
+
+  
   return (
     <div className="Aiphotoshoot">
       <div className='Herosection'>
