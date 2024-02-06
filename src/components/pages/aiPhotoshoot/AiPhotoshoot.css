@@ -1,0 +1,244 @@
+.Aiphotoshoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Herosection{
+    
+    width: 1200px;
+    min-height: 540px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;   
+    background: linear-gradient(to right top,#dd60f9,#812dee,rgba(118,95,236,0.863),rgb(74,107,227),#dd60f9,blueviolet) no-repeat center center/cover;
+    
+}
+.left-Section{
+    display: flex;
+    flex-direction: column;
+    width: 600px;  
+}
+
+    
+  
+ .left-Container{
+    margin-left: 60px;
+    margin-top: 100px;
+  }
+  .heading2{
+    color: white;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    max-width: 650px;
+    
+    
+  }
+
+
+.left-Container>p{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    max-width: 438px;
+    margin-top: 40px;
+}
+.gen-btn{
+    
+        background-color: white;
+        color: rgb(175, 52, 232);
+        font-weight: 300px;
+        border-radius:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        margin-left: 10px;    
+
+}
+
+.Right-section{
+    width: 600px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+     
+    
+}
+.Right-section > img{
+    border-radius: 20px;
+    width: 350px;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+
+.underhero{
+    
+        display: flex;
+        flex-direction: column;
+        width: 1240px;
+        background-color: #ffffff;
+        height: 800px; 
+        justify-content:center;
+        align-items: center;
+        
+        
+        
+}
+.container2{
+    max-width: 795px;
+    text-align: center;
+    padding: 40px;
+
+    
+}
+.heading1{
+    color: black;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    max-width: 650px;
+    
+    
+  }
+.heading1>p{
+    color: #7c83a2;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 25px;
+
+
+}
+.marquee{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+    
+    
+
+    
+}
+.img_wrap{
+    margin: 0px 40px;
+    
+    
+}
+.img_wrap img{
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+}
+.img_wrap>p{
+    color: #7c83a2;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.functions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    background-color:#ffffff ;
+    height: 300px;
+    
+}
+.details{
+    max-width: 1200px;
+    height: 790px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+    
+}
+.details-left{
+    display: flex;
+    flex-direction: column;
+    width: 586px;
+    height: 700px;
+    background:linear-gradient(to right top,#dd60f9,#812dee,rgba(118,95,236,0.863),rgb(74,107,227),#dd60f9,blueviolet) no-repeat center center/cover;
+    border-radius: 40px;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    
+    
+}
+.title{
+    color: #ffffff;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px;
+    
+  
+}
+.generate{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.details-right{
+    width: 586px;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.details-up{
+    width: 550px;
+    height:340px;
+    background:linear-gradient(to right top,#dd60f9,#812dee,rgba(118,95,236,0.863),rgb(74,107,227),#dd60f9,blueviolet) no-repeat center center/cover;
+    margin-left: 36px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details-down{
+    width: 550px;
+    height:340px;
+    background:linear-gradient(to right top,#dd60f9,#812dee,rgba(118,95,236,0.863),rgb(74,107,227),#dd60f9,blueviolet) no-repeat center center/cover;
+    margin-top: 20px;
+    margin-left: 36px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.generate > img{
+    align-items: center;
+    width: 450px;
+}
+.try{
+    width: 1200px;
+    height: 400px;
+    background-color: #f3f4f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
