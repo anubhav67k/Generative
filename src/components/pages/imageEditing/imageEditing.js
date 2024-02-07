@@ -1,11 +1,26 @@
-import HeroSection from "./HeroSection/HeroSection";
-import Features from "./Features/Features";
-import "./ImageEditing.css";
+import EditHeroSection from "./EditHeroSection/editHeroSection";
+import Features from "./Features/features";
+import "./imageEditing.css";
 import BeforeAfterImageSlider from "react-before-after-slider";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
-const ImageEditing = () => {
+import Header from "../../shared/header/Header";
+import Footer from "../../shared/footer/Footer";
+function imageEditing() {
+  useEffect(() => {
+    const sliderElement=document.querySelector('.styles_wrapper__3KXDn');
+    if (sliderElement){
+      sliderElement.style.position='absolute';
+      sliderElement.style.top='-1%';
+      sliderElement.style.left='-10%';
+      sliderElement.style.height='100%';
+      sliderElement.style.width='120%';
+
+
+
+    }
+  }, []);
   const [selectedSet, setSelectedSet] = useState(1);
   const handleSetChange = (setNumber, event) => {
     event.preventDefault();
@@ -20,6 +35,7 @@ const ImageEditing = () => {
           after:
             "https://static.lightxeditor.com/assets/images/product_cd.webp",
         };
+
       case 2:
         return {
           before:
@@ -27,6 +43,7 @@ const ImageEditing = () => {
           after:
             "https://img.freepik.com/premium-photo/illustration-interior-living-room-box_252025-5883.jpg?size=626&ext=jpg&ga=GA1.1.30508127.1707162865&semt=ais",
         };
+
       case 3:
         return {
           before:
@@ -34,6 +51,7 @@ const ImageEditing = () => {
           after:
             "https://img.freepik.com/free-vector/blue-sedan-car-isolated-white-vector_53876-67352.jpg?size=626&ext=jpg",
         };
+
       case 4:
         return {
           before:
@@ -41,6 +59,7 @@ const ImageEditing = () => {
           after:
             "https://img.freepik.com/free-photo/bowl-baked-beans-garlic-pepper-trivet-blue_114579-37053.jpg?size=626&ext=jpg&ga=GA1.1.30508127.1707162865&semt=ais",
         };
+
       case 5:
         return {
           before:
@@ -48,6 +67,7 @@ const ImageEditing = () => {
           after:
             "https://img.freepik.com/premium-photo/medicine-treatment-hiv-infection-pills-capsules-battle-table-different-colorful-tablets-colored-background-with-copy-space_1048944-23069929.jpg?size=626&ext=jpg&ga=GA1.1.30508127.1707162865&semt=ais",
         };
+
       case 6:
         return {
           before:
@@ -64,13 +84,16 @@ const ImageEditing = () => {
         };
     }
   };
+
   return (
     <>
+      <Header />
       {/* Hero Section start */}
-      <HeroSection />
+      <EditHeroSection />
       {/* Hero Section End */}
+
       <div className="corousal">
-        <Marquee speed={100} pauseOnHover="true">
+        <Marquee speed={100}>
           <img
             src="https://cdn3.pixelcut.app/web/tools/workflow_image_upscaler_thumbnail.jpg"
             alt=""
@@ -99,8 +122,10 @@ const ImageEditing = () => {
         </Marquee>
       </div>
       <Features />
+
       {/* Demo Section  */}
-      <section className="demoSection">
+
+      <div className="demoSection">
         <div className="demoContainer">
           <div className="demoHeading">
             <h1 className="demoTitle">
@@ -120,72 +145,81 @@ const ImageEditing = () => {
           </div>
           <div className="demoAction">
             <div className="demoActionItems">
-              <a
+              <Link
+                to="#"
                 className="getStarted"
-                href="#"
                 onClick={(e) => handleSetChange(1, e)}
               >
                 E-commerce
-              </a>
+              </Link>
             </div>
             <div className="demoActionItems">
-              <a
+              <Link
+                to="#"
                 className="getStarted"
-                href="#"
                 onClick={(e) => handleSetChange(2, e)}
               >
                 Real Estate
-              </a>
+              </Link>
             </div>
             <div className="demoActionItems">
-              <a
+              <Link
+                to="#"
                 className="getStarted"
-                href="#"
                 onClick={(e) => handleSetChange(3, e)}
               >
                 Automotive
-              </a>
+              </Link>
             </div>
             <div className="demoActionItems">
-              <a
+              <Link
+                to="#"
                 className="getStarted"
-                href="#"
                 onClick={(e) => handleSetChange(4, e)}
               >
                 Food
-              </a>
+              </Link>
             </div>
             <div className="demoActionItems">
-              <a
+              <Link
+                to="#"
                 className="getStarted"
-                href="#"
                 onClick={(e) => handleSetChange(5, e)}
               >
                 Supplements
-              </a>
+              </Link>
             </div>
             <div className="demoActionItems">
-              <a
+              <Link
+                to="#"
                 className="getStarted"
-                href="#"
                 onClick={(e) => handleSetChange(6, e)}
               >
                 Furniture
-              </a>
+              </Link>
             </div>
           </div>
-          <div className="demoImgSection">
+          <div className="horizontalLine"></div>
+
+          <div className="demoImgSection" >
+
             <BeforeAfterImageSlider
               before={renderImageSet().before}
               after={renderImageSet().after}
               width={800}
-              height={600}
+              height={500}
             />
+
           </div>
         </div>
-      </section>
+      </div>
+
       {/* steps for editing the images section */}
-      <section className="stepsSection">
+
+      <div className="stepsSection">
+        <div className="stepsHeading">
+          <h1>Steps To Edit Your Images</h1>
+        </div>
         <div className="stepsContainer">
           <div className="steps">
             <img
@@ -218,8 +252,8 @@ const ImageEditing = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section id="footer">
+      </div>
+      <div id="footer">
         <div className="footerContainer">
           <div className="footerLeft">
             <h1>The Photography Replacer</h1>
@@ -228,24 +262,17 @@ const ImageEditing = () => {
               image.
             </p>
           </div>
-          <div className="footerRight">
-            <div className="footerImg">
-              <img
-                src="https://framerusercontent.com/images/Dy8yKYBY778zQDOjJXMEifxEtg.webp"
-                alt=""
-              />
-            </div>
-            <Link to="/login">
-              <div className="buttonContainer">
-                <a className="button" href="#">
-                  Get Started
-                </a>
-              </div>
+
+          <div className="buttonContainer">
+            <Link to="/login" className="button">
+              Get Started
             </Link>
           </div>
         </div>
-      </section>
+      </div>
+      <Footer />
     </>
   );
 }
-export default ImageEditing;
+
+export default imageEditing;

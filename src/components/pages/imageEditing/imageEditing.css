@@ -36,7 +36,11 @@
 .demoTitle {
   font-size: 35px;
   font-weight: 700;
-  color: rgb(66, 54, 238);
+  color: rgb(114, 54, 246);
+}
+.horizontalLine {
+  border-top: 3px solid #878585;
+  margin: -20px 0;
 }
 
 .demoSubTitleContainer {
@@ -90,6 +94,7 @@
   margin: 20px;
 }
 
+
 .demoImgSection {
   margin-top: 30px;
   display: flex;
@@ -101,9 +106,21 @@
 .stepsSection {
   margin: 50px;
   padding: 20px;
+  /* display: flex;
+  flex-direction: column;*/
+}
+.stepsHeading {
+  position: absolute;
+
+  left: 145px;
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(114, 54, 246);
 }
 
 .stepsContainer {
+  margin: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,13 +129,15 @@
 }
 
 .steps {
-  background: linear-gradient(to right top,
-      #dd60f9,
-      #812dee,
-      rgba(118, 95, 236, 0.863),
-      rgb(74, 107, 227),
-      #dd60f9,
-      blueviolet);
+  background: linear-gradient(
+    to right top,
+    #dd60f9,
+    #812dee,
+    rgba(118, 95, 236, 0.863),
+    rgb(74, 107, 227),
+    #dd60f9,
+    blueviolet
+  );
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -170,27 +189,32 @@
 }
 
 .footerContainer {
-  height: 360px;
+  width: 100%;
+  height: 420px;
   color: white;
-  border-radius: 24px;
-  background: linear-gradient(to right top,
-      #dd60f9,
-      #812dee,
-      rgba(118, 95, 236, 0.863),
-      rgb(74, 107, 227),
-      #dd60f9,
-      blueviolet);
-  margin: 50px 120px;
-  padding: 60px;
+  background: linear-gradient(
+    to right top,
+    #dd60f9,
+    #812dee,
+    rgba(118, 95, 236, 0.863),
+    rgb(74, 107, 227),
+    #dd60f9,
+    blueviolet
+  );
+
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 200px;
+
+  gap: 20px;
 }
 
 .footerLeft {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 1200px;
 }
 
@@ -199,15 +223,8 @@
   font-weight: 500;
 }
 
-.footerImg img {
-  width: 70%;
-  border-radius: 10px;
-}
-
 .buttonContainer {
   display: block;
-  margin-left: -490px;
-  margin-top: -80px;
 }
 
 .button {
