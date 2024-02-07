@@ -16,8 +16,8 @@ function imageEditing() {
       sliderElement.style.left='-10%';
       sliderElement.style.height='100%';
       sliderElement.style.width='120%';
-      
-      
+
+
 
     }
   }, []);
@@ -200,16 +200,16 @@ function imageEditing() {
             </div>
           </div>
           <div className="horizontalLine"></div>
-          
+
           <div className="demoImgSection" >
-      
-            <BeforeAfterImageSlider 
+
+            <BeforeAfterImageSlider
               before={renderImageSet().before}
               after={renderImageSet().after}
               width={800}
               height={500}
             />
-          
+
           </div>
         </div>
       </div>
