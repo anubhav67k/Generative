@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "eslint-plugin-flowtype": "^8.0.3",
     "react": "^18.2.0",
     "react-before-after-slider": "^1.0.4",
     "react-dom": "^18.2.0",
@@ -25,9 +24,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jset",
-  "ehttps://assets-global.website-files.com/5ee0a01c741b15ab8ec28a14/65aa9e0ea327cb1e74aa434c_CK-p-1080.webpt-app/jset"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -43,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-flowtype": "^8.0.3",
     "tailwindcss": "^3.4.0"
   }
 }
