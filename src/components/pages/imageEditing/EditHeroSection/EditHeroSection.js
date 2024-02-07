@@ -1,7 +1,7 @@
 import React from "react";
-import "./editHeroSection.css";
+import "./EditHeroSection.css";
 import { Link } from "react-router-dom";
-const editHeroSection = () => {
+const EditHeroSection = () => {
   return (
     <>
       <div className="editHeroSection">
@@ -36,4 +36,4 @@ const editHeroSection = () => {
     </>
   );
 };
-export default editHeroSection;
+export default EditHeroSection;
