@@ -38,6 +38,7 @@
   font-weight: 700;
   color: rgb(114, 54, 246);
 }
+
 .horizontalLine {
   border-top: 3px solid #878585;
   margin: -20px 0;
@@ -109,6 +110,7 @@
   /* display: flex;
   flex-direction: column;*/
 }
+
 .stepsHeading {
   position: absolute;
 
@@ -129,15 +131,13 @@
 }
 
 .steps {
-  background: linear-gradient(
-    to right top,
-    #dd60f9,
-    #812dee,
-    rgba(118, 95, 236, 0.863),
-    rgb(74, 107, 227),
-    #dd60f9,
-    blueviolet
-  );
+  background: linear-gradient(to right top,
+      #dd60f9,
+      #812dee,
+      rgba(118, 95, 236, 0.863),
+      rgb(74, 107, 227),
+      #dd60f9,
+      blueviolet);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -192,15 +192,13 @@
   width: 100%;
   height: 420px;
   color: white;
-  background: linear-gradient(
-    to right top,
-    #dd60f9,
-    #812dee,
-    rgba(118, 95, 236, 0.863),
-    rgb(74, 107, 227),
-    #dd60f9,
-    blueviolet
-  );
+  background: linear-gradient(to right top,
+      #dd60f9,
+      #812dee,
+      rgba(118, 95, 236, 0.863),
+      rgb(74, 107, 227),
+      #dd60f9,
+      blueviolet);
 
   display: flex;
   flex-direction: column;

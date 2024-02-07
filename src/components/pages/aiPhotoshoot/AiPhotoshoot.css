@@ -6,7 +6,7 @@
 }
 
 .Herosection {
-    width: 1200px;
+    width: 100%;
     min-height: 540px;
     display: flex;
     flex-direction: row;
@@ -75,7 +75,7 @@
 .underhero {
     display: flex;
     flex-direction: column;
-    width: 1240px;
+    width: 100%;
     background-color: #ffffff;
     height: 800px;
     justify-content: center;

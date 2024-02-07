@@ -1,24 +1,21 @@
 import EditHeroSection from "./EditHeroSection/editHeroSection";
-import Features from "./Features/features";
-import "./imageEditing.css";
+import Features from "./features/Features";
+import "./ImageEditing.css";
 import BeforeAfterImageSlider from "react-before-after-slider";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 import Header from "../../shared/header/Header";
 import Footer from "../../shared/footer/Footer";
-function imageEditing() {
+function ImageEditing() {
   useEffect(() => {
-    const sliderElement=document.querySelector('.styles_wrapper__3KXDn');
-    if (sliderElement){
-      sliderElement.style.position='absolute';
-      sliderElement.style.top='-1%';
-      sliderElement.style.left='-10%';
-      sliderElement.style.height='100%';
-      sliderElement.style.width='120%';
-
-
-
+    const sliderElement = document.querySelector(".styles_wrapper__3KXDn");
+    if (sliderElement) {
+      sliderElement.style.position = "absolute";
+      sliderElement.style.top = "-1%";
+      sliderElement.style.left = "-10%";
+      sliderElement.style.height = "100%";
+      sliderElement.style.width = "120%";
     }
   }, []);
   const [selectedSet, setSelectedSet] = useState(1);
@@ -201,15 +198,13 @@ function imageEditing() {
           </div>
           <div className="horizontalLine"></div>
 
-          <div className="demoImgSection" >
-
+          <div className="demoImgSection">
             <BeforeAfterImageSlider
               before={renderImageSet().before}
               after={renderImageSet().after}
               width={800}
               height={500}
             />
-
           </div>
         </div>
       </div>
@@ -275,4 +270,4 @@ function imageEditing() {
   );
 }
 
-export default imageEditing;
+export default ImageEditing;
