@@ -1,5 +1,5 @@
 import EditHeroSection from "./EditHeroSection/EditHeroSection";
-import Features from "./features/Features";
+import Features from "./Features/Features";
 import "./ImageEditing.css";
 import BeforeAfterImageSlider from "react-before-after-slider";
 import React, { useState, useEffect } from "react";
